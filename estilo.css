@@ -7,7 +7,7 @@
 
 body {
     font-family: sans-serif;
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 
 h1 {
@@ -25,6 +25,7 @@ h3 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    width: 100vw;
     height: 200px;
 }
 
@@ -84,7 +85,9 @@ header form {
 
 #body-content {
     display: flex;
-    max-width: 90vh;
+    flex-direction: row;
+    width: auto;
+    
 }
 
 #side-bar {
@@ -169,13 +172,6 @@ li {
 
 }
 
-
-
-.area-artigo {
-    max-width: 90vw;
-    padding: 35px;
-}
-
 .area-artigo header {
     display: flex;
     flex-direction: column;
@@ -193,6 +189,10 @@ li {
 .content-artigo {
     display: flex;
     flex-flow: column nowrap;
+    padding: 25px;
+    width: 70vw;
+    overflow: hidden;
+
     gap: 45px;
 }
 
@@ -250,28 +250,27 @@ li {
     height: 600px;
 }
 
-@media (max-width: 753px) {
+@media (max-width: 900px) {
     #side-bar {
-        display: none;
+        display:none;
     }
 
     .video-artigo {
-        height: 450px;
+        height: 45vh;
     }
 
     #input-search {
         width: 100%;
-        width: 300px;
-
     }
 
     #input-search:focus {
-        width: 300px;
+        width: 100%;
 
     }
 
-    .area-artigo {
-        padding: 15px;
+    .content-artigo {
+        width:90vw;
+        padding: 5px;
     }
 
 
