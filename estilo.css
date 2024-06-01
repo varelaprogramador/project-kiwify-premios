@@ -1,0 +1,144 @@
+*{
+    margin:0px;
+    padding: 0px;
+    
+}
+
+body{
+    font-family: sans-serif;
+}
+
+h1{
+font-weight: 800;
+font-size: 25px;
+}
+h3{
+    font-weight: 800;
+    font-size: 25px;
+    }
+#header-global{
+    background-color: #000;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 200px;
+}
+.header-flex-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    height: 50px;
+    padding: 5px;
+}
+#logo-header{
+    width: 100px;
+    height: 28px;
+}
+.btn-backSite{
+    width: 125px;
+    height: 45px;
+
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #272727;
+
+}
+header form{
+    height: 50px;
+    align-self: center;
+}
+#input-search{
+    color: white;
+    width: 400px;
+    padding: 25px 30px 25px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4e4e4e;
+    outline: none;
+
+}
+#input-search::-webkit-input-placeholder{
+    color: white;
+}
+#input-search:focus{
+    color: rgb(0, 0, 0);
+    width: 350px;
+   
+    background-color: #ffffff;
+    
+
+}
+#body-content{
+    display: flex;
+    min-height: 100vh;
+}
+#side-bar{
+    width: 500px;
+    background-color: #f3fdfd;
+    border-right: 1px solid rgba(214, 210, 210, 0.493);
+
+}
+.area-artigo{
+    max-width: 90vw;
+    padding: 35px;
+}
+.area-artigo header{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   
+}
+.row-display{
+    width: 100%;
+    height: 1px;
+    background-color: #dadada;
+    
+}
+.content-artigo{
+    display: flex;
+    flex-flow: column nowrap;
+    gap:45px;
+}
+.descricao-premio{
+    color: #4e4e4e;
+    font-size: 15px;
+    line-height: 25px;
+}
+.area-premio{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.titulo-premio{
+    font-weight: 600;
+    font-size: 25px;
+    color: #10da5e;
+}
+.img-premio{
+    width: 450px;
+    align-self: center;
+
+}
+.legenda-premio{
+    color: rgb(66, 66, 66);
+    font-size: 15px;
+    font-weight: 700; 
+    
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    aside{
+        display: none;
+    }
+    #input-search{
+        width: 300px;
+        
+    }
+    #input-search:focus{
+        width: 300px;
+        
+    }
+    
+    
+}
