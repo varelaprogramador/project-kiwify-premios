@@ -84,6 +84,7 @@ header form {
 
 #body-content {
     display: flex;
+    max-width: 90vh;
 }
 
 #side-bar {
