@@ -1,40 +1,45 @@
-*{
-    margin:0px;
+* {
+    margin: 0px;
     padding: 0px;
-    
+
 }
 
-body{
+body {
     font-family: sans-serif;
 }
 
-h1{
-font-weight: 800;
-font-size: 25px;
-}
-h3{
+h1 {
     font-weight: 800;
     font-size: 25px;
-    }
-#header-global{
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+#header-global {
     background-color: #000;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     height: 200px;
 }
-.header-flex-row{
+
+.header-flex-row {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     height: 50px;
     padding: 5px;
 }
-#logo-header{
+
+#logo-header {
     width: 100px;
     height: 28px;
 }
-.btn-backSite{
+
+.btn-backSite {
     width: 125px;
     height: 45px;
 
@@ -44,11 +49,13 @@ h3{
     background-color: #272727;
 
 }
-header form{
+
+header form {
     height: 50px;
     align-self: center;
 }
-#input-search{
+
+#input-search {
     color: white;
     width: 400px;
     padding: 25px 30px 25px 30px;
@@ -58,87 +65,204 @@ header form{
     outline: none;
 
 }
-#input-search::-webkit-input-placeholder{
+
+#input-search::-webkit-input-placeholder {
     color: white;
+    text-align: center;
 }
-#input-search:focus{
+
+#input-search:focus {
     color: rgb(0, 0, 0);
-    width: 350px;
-   
+    width: 400px;
+
     background-color: #ffffff;
-    
+
 
 }
-#body-content{
+
+#body-content {
     display: flex;
     min-height: 100vh;
 }
-#side-bar{
-    width: 500px;
+
+#side-bar {
+    padding: 25px;
+    width: 460px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 25px;
     background-color: #f3fdfd;
     border-right: 1px solid rgba(214, 210, 210, 0.493);
 
 }
-.area-artigo{
+
+#side-bar header {
+    margin-top: 30px;
+
+}
+
+
+#side-bar span {
+    display: flex;
+    align-items: center;
+
+
+}
+
+#side-bar span::before {
+    background-image: url("./assets/seta.svg");
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+
+
+}
+
+#btn-sobre {
+
+    background-color: #476DA5;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    font-weight: 500;
+    color: white;
+    border-radius: 2px;
+
+
+}
+
+#menu-side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
+.titulo-medio {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#menu-side a,
+li {
+    list-style-type: none;
+    color: #000000cc;
+    font-size: 15px;
+
+}
+
+#menu-side a:hover {
+    text-decoration: underline;
+    color: #000000cc;
+
+}
+
+
+
+.area-artigo {
     max-width: 90vw;
     padding: 35px;
 }
-.area-artigo header{
-   display: flex;
-   flex-direction: column;
-   gap: 15px;
-   
+
+.area-artigo header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
 }
-.row-display{
+
+.row-display {
     width: 100%;
     height: 1px;
     background-color: #dadada;
-    
+
 }
-.content-artigo{
+
+.content-artigo {
     display: flex;
     flex-flow: column nowrap;
-    gap:45px;
+    gap: 45px;
 }
-.descricao-premio{
+
+.descricao-premio {
     color: #4e4e4e;
     font-size: 15px;
     line-height: 25px;
 }
-.area-premio{
+
+.area-premio {
     display: flex;
     flex-flow: column nowrap;
 }
-.titulo-premio{
+
+.titulo-premio {
     font-weight: 600;
     font-size: 25px;
     color: #10da5e;
 }
-.img-premio{
+
+.img-premio {
     width: 450px;
     align-self: center;
 
 }
-.legenda-premio{
+
+.legenda-premio {
     color: rgb(66, 66, 66);
     font-size: 15px;
-    font-weight: 700; 
-    
+    font-weight: 700;
+
     text-align: center;
 }
 
-@media (max-width: 600px) {
-    aside{
+.titulo-artigo2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.banner-text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 116, 0.747);
+    border-left: 5px solid yellow;
+    font-size: 14px;
+    color: #302e2e;
+    font-weight: 600;
+
+}
+.video-artigo{
+    height: 600px;
+}
+
+@media (max-width: 753px) {
+    #side-bar {
         display: none;
     }
-    #input-search{
-        width: 300px;
-        
+    .video-artigo{
+        height: 450px;
     }
-    #input-search:focus{
+
+    #input-search {
         width: 300px;
-        
+
     }
-    
-    
+
+    #input-search:focus {
+        width: 300px;
+
+    }
+
+
 }
